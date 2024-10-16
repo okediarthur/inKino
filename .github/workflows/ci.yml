@@ -9,7 +9,7 @@ on:
 
 jobs:
   sca_and_sast:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #OS
 
     steps:
       - name: Checkout code
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "stable"
+          flutter-version: "3.19.6"
 
       - name: Install dependencies
         run: flutter pub get
